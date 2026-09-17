@@ -1,0 +1,160 @@
+@use "./abstracts" as *;
+
+.section_1 {
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+
+  .container {
+    width: 1200px;
+    max-width: 95%;
+    margin-top: 5em;
+
+    @include tablet {
+      width: 800px;
+    }
+
+    @include desktop {
+      width: 1200px;
+    }
+
+    .subsection_1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      @include mini-ipad {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .text_half {
+        @include mini-ipad {
+          width: 60%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.8);
+
+          @include ipad-pro {
+            font-size: 2rem;
+          }
+
+          @include desktop {
+            font-size: 2.5rem;
+          }
+        }
+
+        p {
+          font-size: .8rem;
+          color: rgba(0, 0, 0, 0.8);
+
+          @include ipad-pro {
+            font-size: .9rem;
+          }
+
+          @include desktop {
+            font-size: 1rem;
+          }
+        }
+
+        button {
+          font-size: .8rem;
+          color: #fff;
+          background-color: #000;
+          border-radius: 12px;
+          height: 40px;
+          padding: 0 1em;
+          margin-top: 1em;
+
+          @include ipad-pro {
+            font-size: .9rem;
+          }
+        }
+      }
+
+      .image_half {
+        @include mini-ipad {
+          width: 40%;
+        }
+
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+
+    .subsection_2 {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      margin-top: 3rem;
+
+      @include mini-ipad {
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+
+      .text_half {
+        @include mini-ipad {
+          width: 60%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.8);
+
+          @include ipad-pro {
+            font-size: 2rem;
+          }
+
+          @include desktop {
+            font-size: 2.5rem;
+          }
+        }
+
+        p {
+          font-size: .8rem;
+          color: rgba(0, 0, 0, 0.8);
+
+          @include ipad-pro {
+            font-size: .9rem;
+          }
+
+          @include desktop {
+            font-size: 1rem;
+          }
+        }
+
+        button {
+          font-size: .8rem;
+          color: #fff;
+          background-color: #000;
+          border-radius: 12px;
+          height: 40px;
+          padding: 0 1em;
+          margin-top: 1em;
+
+          @include ipad-pro {
+            font-size: .9rem;
+          }
+        }
+      }
+
+      .image_half {
+        @include mini-ipad {
+          width: 40%;
+        }
+
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

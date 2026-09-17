@@ -1,0 +1,53 @@
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0;
+  position: fixed;
+  z-index: 2;
+  width: 100dvw;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95%;
+  width: 100dvw;
+  padding: 0 1em;
+}
+@media (min-width: 820px) {
+  nav .container {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  nav .container {
+    width: 1200px;
+  }
+}
+nav .container .logo-image {
+  width: 100px;
+  width: 80px;
+}
+nav .container button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5em 1em;
+}
+nav .container button img {
+  width: 20px;
+  width: 15px;
+}
+nav .container button span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  font-weight: 600;
+}/*# sourceMappingURL=nav.css.map */

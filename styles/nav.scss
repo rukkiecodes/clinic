@@ -1,0 +1,71 @@
+@use "./abstracts" as *;
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: .5em 0;
+  position: fixed;
+  z-index: 2;
+  width: 100dvw;
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+
+    @include mobile {
+      width: 100dvw;
+      padding: 0 1em;
+    }
+
+    @include tablet {
+      width: 800px;
+    }
+
+    @include desktop {
+      width: 1200px;
+    }
+
+    .logo-image {
+      width: 100px;
+
+      @include mobile {
+        width: 80px;
+      }
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: .5em 1em;
+
+      img {
+        width: 20px;
+
+        @include mobile {
+          width: 15px;
+        }
+      }
+
+      span {
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        @include mobile {
+          font-size: .7rem;
+          letter-spacing: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

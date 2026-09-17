@@ -1,0 +1,80 @@
+// abstracts/_mixins.scss
+@use "sass:map";
+@use "breakpoints" as *;
+
+// Mobile-first: styles from this width UP
+@mixin from($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error "Unknown breakpoint: #{$name}. Available: #{map.keys($breakpoints)}";
+  }
+
+  $value: map.get($breakpoints, $name);
+
+  @if $value ==0 {
+    @content;
+  }
+
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+// Desktop-first: styles from this width DOWN
+@mixin until($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error "Unknown breakpoint: #{$name}";
+  }
+
+  $value: map.get($breakpoints, $name);
+
+  @media (max-width: ($value - 0.02px)) {
+    @content;
+  }
+}
+
+// Between two breakpoints
+@mixin between($from, $to) {
+  @if not map.has-key($breakpoints, $from) {
+    @error "Unknown breakpoint: #{$from}";
+  }
+
+  @if not map.has-key($breakpoints, $to) {
+    @error "Unknown breakpoint: #{$to}";
+  }
+
+  $min: map.get($breakpoints, $from);
+  $max: map.get($breakpoints, $to);
+
+  @media (min-width: $min) and (max-width: ($max - 0.02px)) {
+    @content;
+  }
+}
+
+// Orientation helper
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// Retina / HiDPI
+@mixin retina {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// Reduced motion
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

@@ -1,0 +1,157 @@
+.section_1 {
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.section_1 .container {
+  width: 1200px;
+  max-width: 95%;
+  margin-top: 5em;
+}
+@media (min-width: 820px) {
+  .section_1 .container {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .section_1 .container {
+    width: 1200px;
+  }
+}
+.section_1 .container .subsection_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_1 {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_1 .text_half {
+    width: 60%;
+  }
+}
+.section_1 .container .subsection_1 .text_half h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_1 .text_half h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section_1 .container .subsection_1 .text_half h1 {
+    font-size: 2.5rem;
+  }
+}
+.section_1 .container .subsection_1 .text_half p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_1 .text_half p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section_1 .container .subsection_1 .text_half p {
+    font-size: 1rem;
+  }
+}
+.section_1 .container .subsection_1 .text_half button {
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_1 .text_half button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_1 .image_half {
+    width: 40%;
+  }
+}
+.section_1 .container .subsection_1 .image_half img {
+  border-radius: 20px;
+}
+.section_1 .container .subsection_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_2 {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_2 .text_half {
+    width: 60%;
+  }
+}
+.section_1 .container .subsection_2 .text_half h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_2 .text_half h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section_1 .container .subsection_2 .text_half h1 {
+    font-size: 2.5rem;
+  }
+}
+.section_1 .container .subsection_2 .text_half p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_2 .text_half p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section_1 .container .subsection_2 .text_half p {
+    font-size: 1rem;
+  }
+}
+.section_1 .container .subsection_2 .text_half button {
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+@media (min-width: 1024px) {
+  .section_1 .container .subsection_2 .text_half button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .section_1 .container .subsection_2 .image_half {
+    width: 40%;
+  }
+}
+.section_1 .container .subsection_2 .image_half img {
+  border-radius: 20px;
+}/*# sourceMappingURL=section_1.css.map */

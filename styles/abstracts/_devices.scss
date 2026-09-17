@@ -1,0 +1,50 @@
+// abstracts/_devices.scss
+@use "mixins" as *;
+
+@mixin mobile {
+  @include from("mobile") {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  @include from("mobile-lg") {
+    @content;
+  }
+}
+
+@mixin tablet-sm {
+  @include from("tablet-sm") {
+    @content;
+  }
+}
+
+@mixin mini-ipad {
+  @include from("mini-ipad") {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include from("tablet") {
+    @content;
+  }
+}
+
+@mixin ipad-pro {
+  @include from("ipad-pro") {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include from("desktop") {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @include from("desktop-lg") {
+    @content;
+  }
+}

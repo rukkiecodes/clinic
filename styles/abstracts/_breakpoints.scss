@@ -1,0 +1,15 @@
+// abstracts/_breakpoints.scss
+
+$breakpoints: (
+  "mobile": 0,
+  "mobile-lg": 480px,
+  "tablet-sm": 640px,
+  "mini-ipad": 768px,
+  // iPad Mini portrait
+  "tablet": 820px,
+  // iPad Air portrait
+  "ipad-pro": 1024px,
+  // iPad Pro / landscape
+  "desktop": 1200px,
+  "desktop-lg": 1440px,
+);
