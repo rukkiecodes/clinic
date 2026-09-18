@@ -52,12 +52,14 @@
 @media (min-width: 768px) {
   .section_4 .container .grid {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .section_4 .container .grid .card {
   border-radius: 12px;
   overflow: hidden;
   background-color: #fff;
+  width: 31.333%;
 }
 .section_4 .container .grid .card .card_body {
   padding: 1em;

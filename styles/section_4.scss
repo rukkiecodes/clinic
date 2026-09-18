@@ -50,12 +50,14 @@
 
       @include mini-ipad {
         flex-direction: row;
+        flex-wrap: wrap;
       }
 
       .card {
         border-radius: 12px;
         overflow: hidden;
         background-color: #fff;
+        width: 31.333%;
 
         .card_body {
           padding: 1em;
