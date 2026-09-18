@@ -2,7 +2,7 @@
 
 .hero {
   width: 100dvw;
-  height: 60dvh;
+  height: 70dvh;
   position: relative;
   background-image: url('../assets/images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg');
   background-size: cover;
@@ -38,16 +38,14 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.4rem;
       font-weight: 600;
       color: #fff;
-
-      @include mobile {
-        font-size: 1.5rem;
-      }
+      margin-top: 5em;
 
       @include mini-ipad {
         font-size: 2rem;
+        margin-top: 0;
       }
 
       @include desktop {
@@ -56,11 +54,19 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: .7rem;
       color: #fff;
       margin-top: 1em;
 
-      @include mobile {
+      br {
+        display: none;
+
+        @include mini-ipad {
+          display: initial;
+        }
+      }
+
+      @include mini-ipad {
         font-size: .8rem;
       }
 

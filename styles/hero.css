@@ -1,6 +1,6 @@
 .hero {
   width: 100dvw;
-  height: 60dvh;
+  height: 70dvh;
   position: relative;
   background-image: url("../assets/images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg");
   background-size: cover;
@@ -37,14 +37,15 @@
   }
 }
 .hero .container h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
-  font-size: 1.5rem;
+  margin-top: 5em;
 }
 @media (min-width: 768px) {
   .hero .container h1 {
     font-size: 2rem;
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -53,10 +54,22 @@
   }
 }
 .hero .container p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #fff;
   margin-top: 1em;
-  font-size: 0.8rem;
+}
+.hero .container p br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero .container p br {
+    display: initial;
+  }
+}
+@media (min-width: 768px) {
+  .hero .container p {
+    font-size: 0.8rem;
+  }
 }
 @media (min-width: 1200px) {
   .hero .container p {
