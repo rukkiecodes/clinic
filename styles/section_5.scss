@@ -1,0 +1,102 @@
+@use "./abstracts" as *;
+
+.section_5 {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    max-width: 95%;
+
+    @include tablet {
+      width: 800px;
+    }
+
+    @include desktop {
+      width: 1200px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include desktop {
+        margin-bottom: 5em;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+
+        @include desktop {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 2em;
+
+      @include mini-ipad {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @include desktop {
+        gap: 2em;
+      }
+
+      .image_side {
+        @include mini-ipad {
+          width: 50%;
+        }
+
+        img {
+          border-radius: 12px;
+        }
+      }
+
+      .text_side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+
+        @include mini-ipad {
+          width: 50%;
+        }
+
+        .accordion_1,
+        .accordion_2,
+        .accordion_3,
+        .accordion_4,
+        .accordion_5 {
+          border-left: 2px solid #25120E80;
+          padding: .3em 1em;
+          transition: .25s all ease-in-out;
+        }
+      }
+    }
+
+    .action {
+      margin-top: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        background-color: #000;
+        color: #fff;
+        font-size: .9rem;
+        border-radius: 12px;
+        padding: .5em 1em;
+        height: 40px;
+      }
+    }
+  }
+}

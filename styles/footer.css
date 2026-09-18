@@ -1,0 +1,84 @@
+footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1882352941);
+  padding: 1em;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .container {
+    width: 800px;
+  }
+}
+@media (min-width: 820px) {
+  footer .container {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .container {
+    width: 1200px;
+  }
+}
+footer .container .layer_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .container .layer_1 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .container .layer_1 img {
+  width: 90px;
+  margin-bottom: 1em;
+}
+footer .container .layer_1 .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .container .layer_1 .contacts {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5em;
+  }
+}
+footer .container .layer_1 .contacts span {
+  font-size: 0.8rem;
+}
+footer .container .layer_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .layer_2 p {
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  footer .container .layer_2 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

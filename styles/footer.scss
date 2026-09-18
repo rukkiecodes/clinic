@@ -1,0 +1,87 @@
+@use "./abstracts" as *;
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #00000030;
+  padding: 1em;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mini-ipad {
+      width: 800px;
+    }
+
+    @include tablet {
+      width: 800px;
+    }
+
+    @include desktop {
+      width: 1200px;
+    }
+
+    .layer_1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include mini-ipad {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      img {
+        width: 90px;
+        margin-bottom: 1em;
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mini-ipad {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          gap: .5em;
+        }
+
+        span {
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .layer_2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: .8rem;
+      }
+
+      @include mini-ipad {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+}
